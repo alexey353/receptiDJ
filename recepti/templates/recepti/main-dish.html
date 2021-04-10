@@ -1,0 +1,100 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/css/catalog_style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <title>Каталог</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <div class="header__logo">SO DELICIOUS</div>
+
+                <nav class="nav" style="left: 650px;">
+                    <a class="nav__link" href="{% url 'home' %}">Home</a>
+                    <a class="nav__link" href="{% url 'about' %}">About</a>
+                    <a class="nav__link" href="{% url 'catalog' %}">Recipes</a>
+                    <a class="nav__link" href="{% url 'instruments' %}">Instruments</a>
+                    <a class="nav__link" href="{% url 'contact' %}">Contact</a>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <header2 class="menu_catalog">
+        <div class="fotocat"></div>
+        <div class="all_container">
+            <div class="container_catalog">
+                <div class="zagolovok_cat">CATEGORIES</div>
+
+                <ul class="list_categories">
+                    <li class="cat_item_1">
+                        <a href="{% url 'zakuski' %}" class="list-group-item">Закуски</a>
+                    </li>
+                    <li class="cat_item_2">
+                        <a href="{% url 'main-dish' %}" class="list-group-item">Главные блюда</a>
+                    </li>
+                    <li class="cat_item_3">
+                        <a href="{% url 'salads' %}" class="list-group-item">Салаты</a>
+                    </li>
+                    <li class="cat_item_4">
+                        <a href="{% url 'desserts' %}" class="list-group-item">Десерты</a>
+                    </li>
+                    <li class="cat_item_5">
+                        <a href="{% url 'drinks' %}" class="list-group-item">Напитки</a>
+                    </li>
+                    <li class="cat_item_6">
+                        <a href="{% url 'vegetarians' %}" class="list-group-item">Вегетарианское</a>
+                    </li>
+                </ul>
+            </div>
+                <div class="recepti">
+                    <div class="container_catalog_2">
+                        <div class="zagolovok_dish"> ― Главные блюда ― </div>
+                    </div>
+                    <div class="container_catalog_5">
+                        <div class="hars">
+                            {% for el in zakus %}
+                                {% if el.category == "Главные блюда" or el.category == "главные блюда" %}
+                                    <div class="vibor_dish">
+                                        <img src="{{ el.image.url }}" width="350px" height="233px" />
+                                        <div class="opisanie_dish">
+                                            <div class="name_dish">
+                                                <a href="{% url 'recept-detail' el.id %}" class="list-group-item1">• {{el.name}} •</a>
+                                            </div>
+                                            <div class="cat_dish"> {{el.anons}} </div>
+                                            <div class="avtor_dish">Автор: {{el.avtor}} </div>
+                                            <div class="ccal_dish">Калорийность блюда: {{el.kkal}} </div>
+                                            <a href="{% url 'recept-detail' el.id %}"><button class="btn_prosmotr"> Читать далее </button></a>
+                                        </div>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </header2>
+
+</body>
+</html>

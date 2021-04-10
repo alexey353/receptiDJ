@@ -1,0 +1,126 @@
+{% load static %}
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>SO DELICIOUS</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <div class="header__logo">SO DELICIOUS</div>
+
+                <nav class="nav" style="left: 650px;">
+                    <a class="nav__link" href="{% url 'home' %}">Home</a>
+                    <a class="nav__link" href="{% url 'about' %}">About</a>
+                    <a class="nav__link" href="{% url 'catalog' %}">Recipes</a>
+                    <a class="nav__link" href="{% url 'instruments' %}">Instruments</a>
+                    <a class="nav__link" href="{% url 'contact' %}">Contact</a>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+
+    </div>
+    <next_header class="next_header">
+        <div class="container__next">
+            <div class="next_header__inner">
+
+                <div class="next_header__logo">Welcome to So Delicious!</div>
+                <p class="__privetst">“Добро пожаловать на сайт с рецептами. Мы очень ценим каждого посетителя и хотим, чтобы он узнал что-то новое для себя в области кулинарии.”</p>
+                <div class="zagolovok_vid_welcome">DISHES OF OUR SITE</div>
+                <div class="vid_welcome"></div>
+                <div class="nazv_welcome">Закуски Главные Салаты Десерты Напитки</div>
+            </div>
+            <div class="foto_welcome"></div>
+
+        </div>
+    </next_header>
+
+    <div class="header_3">
+        <div class="container_header_3">
+
+            <div class="fon_header_3">
+                <div class="name_menu_header_3">OUR RECIPES</div>
+                    <div class="food_kart">
+                        <div class="food1">
+                            <div class="food1_foto"></div>
+                            <div class="food1_nazv">Killer Mixer</div>
+                            <li class="food1_janr">Дессерты</li>
+                            <div class="button button1">Посмотреть</div>
+                        </div>
+                        <div class="food2">
+                            <div class="food2_foto"> </div>
+                            <div class="food2_nazv">Masala Dosa</div>
+                            <li class="food2_janr">Не вегетарианское</li>
+                            <div class="button button1">Посмотреть</div>
+                        </div>
+                        <div class="food3">
+                            <div class="food3_foto"> </div>
+                            <div class="food3_nazv">Gurabitur Augue</div>
+                            <li class="food3_janr">Вегатарианское</li>
+                            <div class="button button1">Посмотреть</div>
+                        </div>
+                        <div class="food4">
+                            <div class="food4_foto"> </div>
+                            <div class="food4_nazv">Grilled Pineapple</div>
+                            <li class="food4_janr">Салаты</li>
+                            <a href=""><div class="button button1">Посмотреть</div></a>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header_itog">
+        <div class="container_itog">
+            <div class="blog1_itog">SO DELICIOUS</div>
+            <p class="slova_itog">Данный сайт разрабатывался исключительно в учебных целях для выполнения дипломной работы.</p>
+
+            <div class="blog2_itog">
+
+            </div>
+        </div>
+
+        <div class="container_itog_2">
+            <div class="soc_nazv">Contact Us</div>
+                <div class="social instagram">
+                    <a href="https://www.instagram.com/alexeyy_esl/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+                <div class="social vk">
+                    <a href="https://vk.com/idalexeyy_esl/" target="_blank"><i class="fa fa-vk fa-2x"></i></a>
+                </div>
+                <div class="social telegram">
+                    <a href="https://t.me/Recept_in_this_bot" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+                </div>
+        </div>
+
+        <div class="container_itog_3">
+            <div class="location_nazv">LOCATION</div>
+            <p class="location_description">295034, Республика Крым, г. Симферополь, ул. Киевская, 116-б</p>
+            <p class="copyright">Copyright 2021 <span class="colortext">alexeyy_esl</span> All right reserved.</p>
+        </div>
+
+    </div>
+</body>
+</html>

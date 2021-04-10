@@ -1,0 +1,72 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/css/catalog_style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <title>Каталог</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <div class="header__logo">SO DELICIOUS</div>
+
+                <nav class="nav" style="left: 650px;">
+                    <a class="nav__link" href="{% url 'home' %}">Home</a>
+                    <a class="nav__link" href="{% url 'about' %}">About</a>
+                    <a class="nav__link" href="{% url 'catalog' %}">Recipes</a>
+                    <a class="nav__link" href="{% url 'instruments' %}">Instruments</a>
+                    <a class="nav__link" href="{% url 'contact' %}">Contact</a>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <header2 class="menu_catalog">
+        <div class="oblohka">
+            <div class="name_about">CONTACT US</div>
+        </div>
+            <div class="zagolovok_about">So Delicious</div>
+
+            <div class="vtoroy_block">
+                <div class="foto_contact"></div>
+                <div class="tekst_about">
+                    <div class="address_contact"> ◆ АДРЕС</div>
+                    <div class="address_kol">295034, Республика Крым, г. Симферополь, ул. Киевская, 116-б</div>
+                    <div class="soc_contact"> ◆ СОЦИАЛЬНЫЕ СЕТИ</div>
+                    <div class="soc_contact_soc">
+                        ◇ Мы в <a class="nav__link1" href="https://www.instagram.com/alexeyy_esl/">Instagram</a><br>
+                        ◇ Мы в <a class="nav__link1" href="https://vk.com/idalexeyy_esl/">ВКонтакте</a>
+                    </div>
+                    <div class="email_contact"> ◆ EMAIL</div>
+                    <div class="email_jal">Для жалоб и предложений: <div class="email">alexey.yarovenko@mail.ru</div></div>
+                    <div class="email_jal">Для сотрудничества: <div class="email">juststeam228@gmail.com</div></div>
+                </div>
+            </div>
+
+            <div class="tretiy_block_contact">
+
+            </div>
+
+    </header2>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'main/css/catalog_style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <title>Каталог</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+
+                <div class="header__logo">SO DELICIOUS</div>
+
+                <nav class="nav" style="left: 650px;">
+                    <a class="nav__link" href="{% url 'home' %}">Home</a>
+                    <a class="nav__link" href="{% url 'about' %}">About</a>
+                    <a class="nav__link" href="{% url 'catalog' %}">Recipes</a>
+                    <a class="nav__link" href="{% url 'instruments' %}">Instruments</a>
+                    <a class="nav__link" href="{% url 'contact' %}">Contact</a>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <header2 class="menu_catalog">
+        <div class="oblohka">
+            <div class="name_about">ABOUT US</div>
+        </div>
+            <div class="zagolovok_about">So Delicious</div>
+
+            <div class="vtoroy_block">
+                <div class="foto_about"></div>
+                <div class="tekst_about">
+                    <div class="abzac_1">So Delicious – это информационный сайт, в котором расположены множество рецептов и истории различных инструментов, которые мы используем в повседневной жизни при готовке наших любимых блюд. На сайте представлены пока что 6 категорий рецептов, а именно: Закуски, Десерты, Главные блюда, Салаты, Вегетарианское и даже Напитки (Коктейли). Со временем наш каталог будет пополняться как новыми категориями с вкуснейшими рецептами, так и интересными и необычными инструментами.</div>
+                    <div class="abzac_2">На нашем сайте присутствует удобная форма для взаимодействия с нашими пользователями, с помощью которой люди могут внести свой вклад в развитие сайта. Рецепт, который отправят нам посетители, помещается в нашу базу, после чего администраторы смогут разместить рецепт на сайте. </div>
+                    <div class="abzac_3">Первые шаги сделаны, дальше – больше ;-)  </div>
+                </div>
+            </div>
+
+            <div class="tretiy_block">
+                <div class="zagolovok_tretiy_block">Our Services</div>
+                <div class="structure_tretiy_block">
+                    <div class="foto_tretiy_block"></div>
+                    <div class="text_pod_foto">Telegram Bot</div>
+                    <div class="text_pod_foto_1">У нас есть бот с рецептами в Telegram для тех, кто хочет всегда иметь доступ к рецептам под рукой</div>
+                    <div class="social telegram">
+                        <a href="https://t.me/Recept_in_this_bot" target="_blank"><i class="fa fa-paper-plane fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+
+    </header2>
+
+</body>
+</html>

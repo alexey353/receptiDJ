@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 15px;
+    line-height: 2.5;
+    color: #333;
+}
+
+/* Заголовок в шапке на главной странице */
+.header__logo {
+    font-size: 25px;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    display: inline-block;
+    border: 1px;
+    padding: 0 1rem;
+}
+
+/* Контейнер (шапка) */
+.container {
+
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #2c2c2c;
+}
+
+/* Навигация на главной странице*/
+.nav {
+    position: absolute;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link, .nav__link1 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+
+    color: #fff;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+.nav__link1 {color: black}
+.nav__link:after, .list-group-item: after, .nav__link1: after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+
+    background-color: #94b800;
+    transition: opacity .1s linear;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav__link:hover, .list-group-item:hover, .nav__link1:hover {
+    color: #94b800;
+}
+
+.nav__link:hover:after, .nav__link1:hover:after {
+    opacity: 1;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.list_categories {
+    line-height: 2.3;
+
+    font-size: 15px;
+    margin-left: 20px;
+
+}
+
+li {list-style-type: none; /* Убираем маркеры у списка */}
+li:before {content: "- "; color: #a6a6a6;/* Добавляем в качестве маркера символ */}
+
+.fotocat {
+    width: 100%;
+    height: 150px;
+    background: url("../img/cat.jpg");
+}
+
+.zagolovok_cat {
+    font-size: 20px;
+    font-family: 'Libre Baskerville', serif;
+    letter-spacing: 3px;
+
+    margin-top: 75px;
+    margin-left: 50px;
+}
+
+.list-group-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+
+    color: #a6a6a6;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+.list-group-item1 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    position: relative;
+
+    color: black;
+    text-decoration: none;
+
+    transition: color 0.2s linear;
+}
+.container_catalog {
+    width: 27%;
+    height: 100vh;
+}
+.container_catalog_2 {
+    width: 100%;
+}
+.all_container {
+    display: flex;
+}
+
+.vibor_dish, .vibor_instr {
+    margin-top: 30px;
+    display: flex;
+}
+.vibor_instr {margin-left: 50px;}
+.zagolovok_dish, .zagolovok_rec, .zagolovok_instr, .zagolovok_instr_detail {
+    font-size: 30px;
+    color: black;
+    margin-top: 10px;
+    margin-left: 160px;
+}
+.zagolovok_instr {margin-left: 400px;}
+.zagolovok_instr_detail {margin-left: 550px;}
+.zagolovok_rec {margin-left: 150px;}
+.zagolovok_instr {margin-left: 400px;}
+.opisanie_dish {
+    margin-left: 15px;
+}
+.full_instr {margin-left: 40px; font-size: 22px;}
+.name_dish, .name_instr {
+    font-size: 25px;
+    font-family: 'RocknRoll One', sans-serif;
+    letter-spacing: 2px;
+}
+.avtor_dish, .history_dish {
+    font-size: 15px;
+    font-family: 'RocknRoll One', sans-serif;
+}
+.cat_instr {margin-left: 20px; margin-top: 10px;}
+img {
+    border: 2px solid black;
+}
+.btn_predl, .btn-form-predl {
+    letter-spacing: 2px;
+    outline: none;
+    border: 2px solid #94b800;
+    background: transparent;
+    font-size: 16px;
+
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    line-height: 15px;
+
+    margin-top: 20px;
+    border-radius: 12px;
+}
+.btn_predl {margin-right: 15px;}
+.btn_predl:hover, .btn-form-predl:hover, .btn_prosmotr:hover, .btn_prosmotr_instr:hover {
+    color: white;
+    background: #94b800;
+}
+
+.zagolovok_form {
+    font-size: 30px;
+    color: black;
+
+    margin-top: 10px;
+    margin-left: 100px;
+}
+.form-predl {
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+    border: 2px solid #a6a6a6;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+.form-predl-full, .form-predl-img {
+    border-radius: 8px;
+    width: 550px;
+    height: 30px;
+    border: 2px solid #a6a6a6;
+    margin-top: 10px;
+    margin-left: 90px;
+}
+.form-predl-anons{border-radius: 8px; width: 550px; height: 30px; border: 2px solid #a6a6a6; margin-top: 0px; margin-left: 90px; }
+.container_catalog_3 {
+    text-align: center;
+}
+
+.btn-form-predl {
+    margin-left: 90px;
+}
+.btn_prosmotr, .btn_prosmotr_instr {
+    letter-spacing: 6px;
+    outline: none;
+    border: 2px solid #a6a6a6;
+    background: transparent;
+    font-size: 12px;
+
+    color: #a6a6a6;
+    padding: 10px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 15px;
+
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+.opisanie_dish_recept {
+    letter-spacing: 3px;
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+
+    width: 500px;
+    height: 254px;
+
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.full_recept {
+    width: 500px;
+    line-height: 1.6;
+    font-size: 20px;
+    font-family: 'Vollkorn', serif;
+}
+.dop_recepta {
+    line-height: 1.3;
+    font-family: 'Vollkorn', serif;
+}
+.date_recept {
+    float: right;
+}
+.date_instr {margin-left: 980px; margin-top: 50px;}
+/*Страница about*/
+.oblohka {
+    height: 180px;
+    width: 100%;
+    background-color: #f2f2f2;
+    display: inline-block;
+}
+.name_about {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 55px;
+}
+.zagolovok_about, .zagolovok_tretiy_block {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-top: 70px;
+}
+.vtoroy_block {
+    display: flex;
+}
+.foto_about {
+    background: url("../img/foto-about.JPG");
+    width: 555px;
+    height: 344px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.tekst_about {
+    font-size: 13.5px;
+    width: 555px;
+    line-height: 1.8;
+    margin-left: 30px;
+    margin-top: 45px;
+}
+.abzac_2, .abzac_3 {
+    margin-top: 14px;
+}
+.tretiy_block_contact {height: 50px;}
+.structure_tretiy_block {text-align: center;}
+.foto_tretiy_block {
+    margin-top: 40px;
+    margin-left: 425px;
+    width: 351px;
+    height: 343px;
+    background: url("../img/telegram.jpg");
+    border: 2px solid #f2f2f2;
+}
+.text_pod_foto{
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 15px;
+}
+.text_pod_foto_1 {
+    font-size: 13.5px;
+    line-height: 1.3;
+    margin-left: 425px;
+    width: 350px;
+}
+.social a {
+    line-height: 47px;
+    display: inline-block;
+    text-align: center;
+    width: 38px;
+    height: 38px;
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    margin-top: 15px;
+    margin-left: 580px;
+    padding: 6px;
+    color: #000;
+}
+.telegram a:hover {background: white; color: #94b800;}
+/*Страница Contact US*/
+.foto_contact {
+    background: url("../img/contact.JPG");
+    width: 534px;
+    height: 751px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.address_contact, .email_contact {
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.email_contact {margin-top: 30px;}
+.address_kol, .email_jal {
+    margin-top: 20px;
+    font-size: 16px;
+}
+.soc_contact {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+.nav__link1 {font-weight: bold;}
+.soc_contact_soc {
+    margin-top: 20px;
+    margin-left: 15px;
+    letter-spacing: 3px;
+    font-size: 16px;
+}
+.email_jal {margin-left: 15px;}
+.email {font-weight: bold; letter-spacing: 3px;}
+.btn_prosmotr_instr {margin-top: 30px;}
+.redaktor {width: 800px; font-family: 'Vollkorn', serif; line-height: 1.6;}
+pre {
+    text-align: left;
+    white-space: pre-line;
+}
+.anons_recept {line-height: 1.4;}
